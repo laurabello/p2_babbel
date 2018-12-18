@@ -1,0 +1,28 @@
+hr {
+    visibility: hidden;
+}
+
+div {
+    width: 100vh;
+}
+
+header {
+    width: 100vw;
+}
+
+nav {
+    max-width: 70%;
+}
+
+ul {
+    list-style: none;
+}
+
+header img {
+    max-width: 20%;
+} 
+
+h1 {
+    font-family: 'Leitura News Roman 4', 'Leitura News', sans-serif;
+}
+
