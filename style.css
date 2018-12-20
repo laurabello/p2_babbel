@@ -4,15 +4,17 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    margin:0;
+    padding-bottom: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 hr {
     visibility: hidden;
 }
 
-div {
-    width: 100vw;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
 
 h1 {
     font-family: 'Leitura News Roman 4', 'Leitura News', serif;
@@ -89,20 +91,16 @@ header button {
 }
 
 /*carousel zone*/
-.carousel,
-.carousel-content {
-    display: flex;
-}
-
-.carousel-content {
-    height: 100vh;
-    flex-direction: row;
-    margin: 0 auto;
-}
 
 .carousel {
     padding: 0 0 10px 0;
-    margin: 0 auto;
+}
+
+.carousel-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
 }
 
 .carousel img,
@@ -117,7 +115,11 @@ header button {
     margin: 0;
 }
 
- #prec {
+#prec {
+}
+
+#number {
+    text-align: center;
 }
 
 /*discover zone*/
