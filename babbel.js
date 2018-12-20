@@ -24,19 +24,18 @@ var prev=function(){
 
 (function(){
     var basenode = document.getElementById("listimages");
-    for(let j =0; j < images.length; j++){
+    for(let j = 0; j < images.length; j++){
         //Creation of node for li
         let node = document.createElement("li");
 
         //attach li to the list
         basenode.appendChild(node);
-        node.innerHTML = ".";
+        node.innerHTML = "."
 
         node.addEventListener("click", function(){
             slider.src = images[j];
         })
     }
-
 })()
 
 
