@@ -35,12 +35,13 @@
     </div>
     <hr>
     <div class="carousel">
-        <img id="slider" src="medias/carousel/carousel1.jpg">
-        <div>
-        <div id="number">1</div>
-        <button type="button" value="Prev" onclick="prev()">Précédent</button>
-        <button type="button" value="Next" onclick="next()">Suivant</button>
-        </div>  
+
+        <div class="carousel-content">
+            <button type="button" value="Prev" onclick="prev()" id="prec"><img src="medias/carousel/arrow.png" style="transform: scaleX(-1);"></button>
+            <img id="slider" src="medias/carousel/carousel1.jpg">
+            <button type="button" value="Next" onclick="next()" id="suiv"><img src="medias/carousel/arrow.png"></button>
+            <div id="number">1</div>
+        </div>
     </div>
     <section id="carousel">
             <div class="box">
