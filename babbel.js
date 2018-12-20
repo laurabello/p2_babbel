@@ -8,18 +8,19 @@ var next=function(){
         slider.src=images[i]
         }
     else{
-        i==0
+        i=0
+        slider.src=images[i] 
     };
 };
 
-i=0;
 var prev=function(){
     var slider=document.getElementById("slider");
     i--;
-    if (i<images.length){
+    if (i >= 0){
         slider.src=images[i]
         }
     else{
-        i==0
+        i=images.length-1
+        slider.src=images[i]
     };
 };
