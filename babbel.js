@@ -8,7 +8,7 @@ var next=function(){
         slider.src=images[i];
         }
     else{
-        i==0;
+        i=1;
     }
 };
 
@@ -20,6 +20,6 @@ var prev=function(){
         slider.src=images[i];
         }
     else{
-        i==0;
+        i=1;
     }
 };
