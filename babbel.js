@@ -5,13 +5,14 @@ var images=["medias/carousel/carousel1.jpg",
 var slider = document.getElementById("slider")
 var i = 0;
 var totalitems = images.length
+var elnumSlider = document.getElementById("numslider")
+elnumSlider.innerHTML = "1 /" + totalitems
 
 var next=function(){
     i++;
     if (i >= images.length){
         i = 0
         }
-
     slider.src=images[i]
     elnumSlider.innerHTML =  (i+1) + " / " + totalitems
 };
