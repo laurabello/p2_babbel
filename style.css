@@ -18,8 +18,19 @@ h1 {
     font-family: 'Leitura News Roman 4', 'Leitura News', serif;
     font-size: 4.5rem;
     color: #ff790f;
-    font-weight: 500;
+    font-weight: 900;
 }
+
+button {
+    padding: 15px;
+    background-color: #ff7b0e;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    font-size: 1.6rem;
+}
+
 
 /*header*/
 header {
@@ -38,9 +49,8 @@ header img {
 
     /*navbox*/
 nav {
-    width: 78%;
-    display: inline-block;
     margin: auto 20px auto auto;
+    width: 50%;
 }
 
 ul {
@@ -48,20 +58,17 @@ ul {
     text-align: right;
     padding: 0;
     margin: auto 5% auto auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
 }
 
 li {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
     margin-right: 10px;
-}
-
-header button {
-    padding: 10px;
-    background-color: #ff7b0e;
-    color: white;
-    font-weight: 800;
-    letter-spacing: 2px;
-    border-radius: 15px;
+    min-width: 30%;
 }
 
 /*presentation zone*/
@@ -76,16 +83,6 @@ header button {
 .presentation h1 {
     margin: 0 20px 10px 20px;
     padding: 2% 0 17% 0;
-}
-
-.presentation button {
-    padding: 10px;
-    margin: 0 0 3% 0;
-    background-color: #ff7b0e;
-    color: white;
-    font-weight: 800;
-    letter-spacing: 2px;
-    border-radius: 15px;
 }
 
 /*carousel zone*/
@@ -103,7 +100,6 @@ header button {
     display: block;
     margin: 0 auto 2% auto;
 }
-
 
 /*discover zone*/
 .decouvrir {
@@ -133,4 +129,3 @@ header button {
 .picto p {
     text-align: left;
 }
-
