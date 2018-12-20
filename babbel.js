@@ -1,4 +1,7 @@
-var images=["medias/carousel/carousel1.jpg","medias/carousel/carousel2.jpg","medias/carousel/carousel3.jpg","medias/carousel/carousel4.jpg"];
+var images=["medias/carousel/carousel1.jpg",
+"medias/carousel/carousel2.jpg",
+"medias/carousel/carousel3.jpg",
+"medias/carousel/carousel4.jpg"];
 
 i=0;
 var next=function(){
