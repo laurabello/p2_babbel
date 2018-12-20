@@ -134,3 +134,30 @@ header button {
     text-align: left;
 }
 
+
+
+
+
+/* https://la-cascade.io/un-carrousel-responsif-en-pur-css/ */
+
+div#sliderx {
+    width: 80%;
+    max-width: 1000px;
+}
+
+div#sliderx figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+
+
+div#sliderx figure img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
