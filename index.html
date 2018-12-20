@@ -8,33 +8,39 @@
     <meta name="description" content="Babbel est la nouvelle manière d'apprendre les langues. Ce système d'apprentissage complet allie les méthodes les plus efficaces et les technologies les plus modernes afin que vous fassiez des progrès rapidement, et facilement." />
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="medias/icone.png">
+    <script type="text/javascript" src="babbel.js"></script>
     <title>Apprenez l'anglais, l'allemand et d'autres langues en ligne!-Babbel.com</title>
 </head>
 <body>
-    <div>
-        <header>
-        <a href="#"><img src="medias/Babbel_Logo.jpg"></a>  
-        <nav>
-            <ul>
+    <header>
+    <a href="#"><img src="medias/Babbel_Logo.jpg"></a>  
+    <nav>
+        <ul>
+            <li>
+                <button onclick="window.location.href='#'">Découvrir</button>
+                </li>
                 <li>
-                    <button onclick="window.location.href='#'">Découvrir</button>
-                    </li>
-                    <li>
-                        <button onclick="window.location.href='#'">Contacter</button>
-                    </li>
-                    <li>
-                        <button onclick="window.location.href='#'">Télécharger</button>
-                    </li> 
-            </ul>
-        </nav>
-        </header>
-        <hr>
-        <div class="presentation">
-            <h1>Parlez une langue comme vous en avez toujours rêvé!</h1>
-            <button onclick="window.location.href='#'">Télécharger</button>
-        </div>
+                    <button onclick="window.location.href='#'">Contacter</button>
+                </li>
+                <li>
+                    <button onclick="window.location.href='#'">Télécharger</button>
+                </li> 
+        </ul>
+    </nav>
+    </header>
+    <hr>
+    <div class="presentation">
+        <h1>Parlez une langue comme vous en avez toujours rêvé!</h1>
+        <button onclick="window.location.href='#'">Télécharger</button>
     </div>
     <hr>
+    <div class="carousel">
+        <img id="slider" src="medias/carousel/carousel1.jpg">
+        <div>
+        <button type="button" value="Prev" onclick="prev()">Précédent</button>
+        <button type="button" value="Next" onclick="next()">Suivant</button>
+        </div>  
+    </div>
     <div class="decouvrir">
         <h1>Avec Babbel, découvrez un nouveau monde</h1>
         <div class="picto">

@@ -88,6 +88,23 @@ header button {
     border-radius: 15px;
 }
 
+/*carousel zone*/
+.carousel {
+    height: 100vh;
+}
+
+.carousel div {
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.carousel img {
+    max-height: 90vh;
+    display: block;
+    margin: 0 auto 2% auto;
+}
+
+
 /*discover zone*/
 .decouvrir {
     background-color: #f4f8fa;
