@@ -35,11 +35,11 @@
     </div>
     <hr>
     <div class="carousel">
-        <img id="slider" src="medias/carousel/carousel1.jpg">
-        <div>
-        <button type="button" value="Prev" onclick="prev()">Précédent</button>
-        <button type="button" value="Next" onclick="next()">Suivant</button>
-        </div>  
+        <div class="carousel-content">
+            <button type="button" value="Prev" onclick="prev()" id="prec"><img src="medias/carousel/arrow.png" style="transform: scaleX(-1);"></button>
+            <img id="slider" src="medias/carousel/carousel1.jpg">
+            <button type="button" value="Next" onclick="next()" id="suiv"><img src="medias/carousel/arrow.png"></button>
+        </div>
     </div>
     <div class="decouvrir">
         <h1>Avec Babbel, découvrez un nouveau monde</h1>
