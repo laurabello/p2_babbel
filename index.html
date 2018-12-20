@@ -35,7 +35,6 @@
     </div>
     <hr>
     <div class="carousel">
-        
         <img id="slider" src="medias/carousel/carousel1.jpg">
         <button type="button" value="Prev" onclick="prev()">Précédent</button>
         <button type="button" value="Next" onclick="next()">Suivant</button>  
@@ -104,50 +103,5 @@
             <input type="submit" value="S'abonner">
         </form>
     </footer>
-    <script>
-
-    var images=[
-        "medias/carousel/carousel1.jpg",
-        "medias/carousel/carousel2.jpg",
-        "medias/carousel/carousel3.jpg",
-        "medias/carousel/carousel4.jpg"];
-
-    i=0;
-
-    var next=function(){
-        var slider=document.getElementById("slider");
-        document.getElementById("numslider").innerHTML =i;
-        i++;
-        
-
-        if (i<images.length){
-            slider.src=images[i]
-            }
-        else{
-
-            i=0
-            slider.src=images[i]
-        };
-    };
-
-    i=0;
-    var prev=function(){
-        var slider=document.getElementById("slider");
-        i--;
-        document.getElementById("numslider").innerHTML =i;
-
-        if (i > 0) {
-            
-            slider.src=images[i];
-            }
-
-        else{
-            i= images.length-1;
-            slider.src=images[i];
-        };
-    };
-
-
-    </script>
 </body>
 </html>

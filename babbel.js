@@ -26,4 +26,4 @@ var prev=function(){
         i=images.length-1
         slider.src=images[i]
     };
-
+}
