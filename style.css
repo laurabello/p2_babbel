@@ -89,21 +89,36 @@ header button {
 }
 
 /*carousel zone*/
-.carousel {
+.carousel,
+.carousel-content {
+    display: flex;
+}
+
+.carousel-content {
     height: 100vh;
+    flex-direction: row;
+    margin: 0 auto;
 }
 
-.carousel div {
-    text-align: center;
+.carousel {
     padding: 0 0 10px 0;
+    margin: 0 auto;
 }
 
-.carousel img {
+.carousel img,
+.carousel button {
     max-height: 90vh;
     display: block;
-    margin: 0 auto 2% auto;
+    border: none;
+    background: none;
 }
 
+.carousel button {
+    margin: 0;
+}
+
+ #prec {
+}
 
 /*discover zone*/
 .decouvrir {
