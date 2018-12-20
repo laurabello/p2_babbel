@@ -8,11 +8,10 @@
     <meta name="description" content="Babbel est la nouvelle manière d'apprendre les langues. Ce système d'apprentissage complet allie les méthodes les plus efficaces et les technologies les plus modernes afin que vous fassiez des progrès rapidement, et facilement." />
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="medias/icone.png">
-
+    <script type="text/javascript" src="babbel.js"></script>
     <title>Apprenez l'anglais, l'allemand et d'autres langues en ligne!-Babbel.com</title>
 </head>
 <body>
-        <script type="text/javascript" src="babbel.js"></script>
     <header>
     <a href="#"><img src="medias/Babbel_Logo.jpg"></a>  
     <nav>
@@ -36,10 +35,13 @@
     </div>
     <hr>
     <div class="carousel">
-        <img id="slider" src="/home/aymeric/Desktop/remplacent/babbeltest/p2_babbel/medias/carousel/carousel3.jpg">
+        
+        <img id="slider" src="medias/carousel/carousel1.jpg">
         <div>
+        <div id="numslider"></div>
         <button type="button" value="Prev" onclick="prev()">Précédent</button>
         <button type="button" value="Next" onclick="next()">Suivant</button>
+        
         </div>  
     </div>
     <div class="decouvrir">
@@ -106,5 +108,50 @@
             <input type="submit" value="S'abonner">
         </form>
     </footer>
+    <script>
+
+    var images=[
+        "medias/carousel/carousel1.jpg",
+        "medias/carousel/carousel2.jpg",
+        "medias/carousel/carousel3.jpg",
+        "medias/carousel/carousel4.jpg"];
+
+    i=0;
+
+    var next=function(){
+        var slider=document.getElementById("slider");
+        document.getElementById("numslider").innerHTML =i;
+        i++;
+        
+
+        if (i<images.length){
+            slider.src=images[i]
+            }
+        else{
+
+            i=0
+            slider.src=images[i]
+        };
+    };
+
+    i=0;
+    var prev=function(){
+        var slider=document.getElementById("slider");
+        i--;
+        document.getElementById("numslider").innerHTML =i;
+
+        if (i > 0) {
+            
+            slider.src=images[i];
+            }
+
+        else{
+            i= images.length-1;
+            slider.src=images[i];
+        };
+    };
+
+
+    </script>
 </body>
 </html>
