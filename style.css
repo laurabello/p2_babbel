@@ -100,6 +100,11 @@ li {
     display: block;
     margin: 0 auto 2% auto;
 }
+.carousel> div> figure> figcaption> img {
+    display: inline-block;
+    width: 50px;
+
+}
 
 /*discover zone*/
 .decouvrir {
