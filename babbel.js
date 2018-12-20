@@ -1,25 +1,43 @@
-var images=["/home/laura/Documents/Simplon/Projets/p2_babbel/p2_babbel/medias/carousel/carousel1.jpg","/home/laura/Documents/Simplon/Projets/p2_babbel/p2_babbel/medias/carousel/carousel2.jpg","/home/laura/Documents/Simplon/Projets/p2_babbel/p2_babbel/medias/carousel/carousel3.jpg","/home/laura/Documents/Simplon/Projets/p2_babbel/p2_babbel/medias/carousel/carousel4.jpg"];
+var images=["medias/carousel/carousel1.jpg",
+            "medias/carousel/carousel2.jpg",
+            "medias/carousel/carousel3.jpg",
+            "medias/carousel/carousel4.jpg"];
+var slider = document.getElementById("slider")
+var i = 0;
 
-i=0;
 var next=function(){
-    var slider=document.getElementById("slider");
     i++;
-    if (i<images.length){
-        slider.src=images[i]
+    if (i >= images.length){
+        i = 0
         }
-    else{
-        i==0
-    };
+
+    slider.src=images[i]
 };
 
-i=0;
 var prev=function(){
-    var slider=document.getElementById("slider");
     i--;
-    if (i<images.length){
-        slider.src=images[i]
+    if (i < 0){
+        i = slider.length - 1
         }
-    else{
-        i==0
-    };
+    slider.src=images[i]
 };
+
+(function(){
+    var basenode = document.getElementById("listimages");
+    for(let j =0; j < images.length; j++){
+        //Creation of node for li
+        let node = document.createElement("li");
+
+        //attach li to the list
+        basenode.appendChild(node);
+        node.innerHTML = ".";
+
+        node.addEventListener("click", function(){
+            slider.src = images[j];
+        })
+    }
+
+})()
+
+
+setInterval(() => next() , 5000);
