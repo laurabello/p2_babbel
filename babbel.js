@@ -11,3 +11,15 @@ var next=function(){
         i==0
     };
 };
+
+i=0;
+var prev=function(){
+    var slider=document.getElementById("slider");
+    i--;
+    if (i<images.length){
+        slider.src=images[i]
+        }
+    else{
+        i==0
+    };
+};
